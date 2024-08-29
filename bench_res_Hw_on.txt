@@ -1,0 +1,123 @@
+exec ${PAGER:-/usr/bin/less} "$0" || exit 1
+
+
+Executing tests from //fleetbench/libc:mem_benchmark
+-----------------------------------------------------------------------------
+2024-08-26T13:54:16+00:00
+Running /home/digvijay/.cache/bazel/_bazel_digvijay/84343628a3d67993cf527a56103eff19/execroot/com_google_fleetbench/bazel-out/k8-opt/bin/fleetbench/libc/mem_benchmark.runfiles/com_google_fleetbench/fleetbench/libc/mem_benchmark
+Run on (16 X 4092.95 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 0.53, 0.25, 0.09
+-----------------------------------------------------------------------------------
+Benchmark                         Time             CPU   Iterations UserCounters...
+-----------------------------------------------------------------------------------
+BM_LIBC_Memcpy_Fleet_L1       0.031 ns        0.031 ns   1001486548 bytes=1.00149G bytes_per_cycle=7.96974/s bytes_per_second=30.3796Gi/s
+BM_LIBC_Memmove_Fleet_L1      0.083 ns        0.083 ns   1001664235 bytes=1.00166G bytes_per_cycle=2.932/s bytes_per_second=11.1764Gi/s
+BM_LIBC_Memcmp_Fleet_L1       0.154 ns        0.154 ns   1000632744 bytes=1.00063G bytes_per_cycle=1.58226/s bytes_per_second=6.03137Gi/s
+BM_LIBC_Bcmp_Fleet_L1         0.260 ns        0.260 ns   1000777236 bytes=1.00078G bytes_per_cycle=0.939859/s bytes_per_second=3.58261Gi/s
+BM_LIBC_Memset_Fleet_L1       0.015 ns        0.015 ns   1004310224 bytes=1.00431G bytes_per_cycle=16.6914/s bytes_per_second=63.6253Gi/s
+exec ${PAGER:-/usr/bin/less} "$0" || exit 1
+
+
+
+Executing tests from //fleetbench/hashing:hashing_benchmark
+-----------------------------------------------------------------------------
+2024-08-26T13:54:28+00:00
+Running /home/digvijay/.cache/bazel/_bazel_digvijay/84343628a3d67993cf527a56103eff19/execroot/com_google_fleetbench/bazel-out/k8-opt/bin/fleetbench/hashing/hashing_benchmark.runfiles/com_google_fleetbench/fleetbench/hashing/hashing_benchmark
+Run on (16 X 4100 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 0.55, 0.27, 0.10
+-----------------------------------------------------------------------------------------------------
+Benchmark                                           Time             CPU   Iterations UserCounters...
+-----------------------------------------------------------------------------------------------------
+BM_HASHING_Extendcrc32cinternal_Fleet_hot       0.179 ns        0.179 ns   1000268226 bytes_per_cycle=1.36161/s bytes_per_second=5.19921Gi/s
+BM_HASHING_Extendcrc32cinternal_Fleet_cold      0.238 ns        0.238 ns   1000268226 bytes_per_cycle=1.02341/s bytes_per_second=3.9078Gi/s
+BM_HASHING_Computecrc32c_Fleet_hot              0.432 ns        0.432 ns   1000001130 bytes_per_cycle=0.564593/s bytes_per_second=2.15585Gi/s
+BM_HASHING_Computecrc32c_Fleet_cold             0.684 ns        0.684 ns   1000001130 bytes_per_cycle=0.356745/s bytes_per_second=1.3622Gi/s
+BM_HASHING_Combine_contiguous_Fleet_hot         0.102 ns        0.102 ns   1000004100 bytes_per_cycle=2.39817/s bytes_per_second=9.15724Gi/s
+BM_HASHING_Combine_contiguous_Fleet_cold        0.322 ns        0.322 ns   1000004100 bytes_per_cycle=0.757806/s bytes_per_second=2.89362Gi/s
+exec ${PAGER:-/usr/bin/less} "$0" || exit 1
+
+
+
+Executing tests from //fleetbench/proto:proto_benchmark
+-----------------------------------------------------------------------------
+2024-08-26T13:54:32+00:00
+Running /home/digvijay/.cache/bazel/_bazel_digvijay/84343628a3d67993cf527a56103eff19/execroot/com_google_fleetbench/bazel-out/k8-opt/bin/fleetbench/proto/proto_benchmark.runfiles/com_google_fleetbench/fleetbench/proto/proto_benchmark
+Run on (16 X 4099.32 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 1.15, 0.40, 0.14
+---------------------------------------------------------
+Benchmark               Time             CPU   Iterations
+---------------------------------------------------------
+BM_PROTO_Arena    6701038 ns      6701212 ns           94
+exec ${PAGER:-/usr/bin/less} "$0" || exit 1
+
+
+
+Executing tests from //fleetbench/stl:cord_benchmark
+-----------------------------------------------------------------------------
+2024-08-26T13:54:35+00:00
+Running /home/digvijay/.cache/bazel/_bazel_digvijay/84343628a3d67993cf527a56103eff19/execroot/com_google_fleetbench/bazel-out/k8-opt/bin/fleetbench/stl/cord_benchmark.runfiles/com_google_fleetbench/fleetbench/stl/cord_benchmark
+Run on (16 X 4099.96 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 1.15, 0.40, 0.14
+--------------------------------------------------------
+Benchmark              Time             CPU   Iterations
+--------------------------------------------------------
+BM_CORD_Fleet       6597 ns         6597 ns        98678
+exec ${PAGER:-/usr/bin/less} "$0" || exit 1
+
+
+
+Executing tests from //fleetbench/swissmap:swissmap_benchmark
+-----------------------------------------------------------------------------
+2024-08-26T13:54:38+00:00
+Running /home/digvijay/.cache/bazel/_bazel_digvijay/84343628a3d67993cf527a56103eff19/execroot/com_google_fleetbench/bazel-out/k8-opt/bin/fleetbench/swissmap/swissmap_benchmark.runfiles/com_google_fleetbench/fleetbench/swissmap/swissmap_benchmark
+Run on (16 X 4100 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 1.06, 0.39, 0.14
+----------------------------------------------------------------------------------------------------------------------
+Benchmark                                                                            Time             CPU   Iterations
+----------------------------------------------------------------------------------------------------------------------
+BM_SWISSMAP_InsertHit_Cold<::absl::flat_hash_set, 64>/set_size:64/density:0       35.8 ns         35.8 ns     19524068
+BM_SWISSMAP_InsertHit_Hot<::absl::flat_hash_set, 64>/set_size:64/density:0        1.70 ns         1.70 ns    436234240
+exec ${PAGER:-/usr/bin/less} "$0" || exit 1
+
+
+
+Executing tests from //fleetbench/tcmalloc:empirical_driver
+-----------------------------------------------------------------------------
+2024-08-26T13:54:43+00:00
+Running /home/digvijay/.cache/bazel/_bazel_digvijay/84343628a3d67993cf527a56103eff19/execroot/com_google_fleetbench/bazel-out/k8-opt/bin/fleetbench/tcmalloc/empirical_driver.runfiles/com_google_fleetbench/fleetbench/tcmalloc/empirical_driver
+Run on (16 X 4100 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 1.05, 0.40, 0.15
+--------------------------------------------------------------------------------------------
+Benchmark                                  Time             CPU   Iterations UserCounters...
+--------------------------------------------------------------------------------------------
+BM_TCMALLOC_5/real_time/threads:1       2227 ns         2227 ns       335478 AllocatedBytes=706.065Mi BytesPerAllocation=573 RateAllocations=24.3508M/s RateBytes=13.0033Gi/s SpaceReleased=1.34375Gi WasteCentral=24.9204Mi WasteLocal=19.4074Mi WastePageheap=170.5Mi WasteTotal=214.828Mi

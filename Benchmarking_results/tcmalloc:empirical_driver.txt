@@ -1,0 +1,26 @@
+Hardware Prefetcher on
+Run on (16 X 4114.44 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 0.19, 1.51, 1.24
+--------------------------------------------------------------------------------------------
+Benchmark                                  Time             CPU   Iterations UserCounters...
+--------------------------------------------------------------------------------------------
+BM_TCMALLOC_5/real_time/threads:1       2050 ns         2050 ns       339432 AllocatedBytes=702.861Mi BytesPerAllocation=570 RateAllocations=26.398M/s RateBytes=14.0291Gi/s SpaceReleased=1.4668Gi WasteCentral=26.1317Mi WasteLocal=23.8612Mi WastePageheap=170.039Mi WasteTotal=220.032Mi
+
+
+HW Prefercher Off
+Run on (16 X 4109.93 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 2.74, 3.61, 2.32
+--------------------------------------------------------------------------------------------
+Benchmark                                  Time             CPU   Iterations UserCounters...
+--------------------------------------------------------------------------------------------
+BM_TCMALLOC_5/real_time/threads:1       2145 ns         2145 ns       335938 AllocatedBytes=705.078Mi BytesPerAllocation=573 RateAllocations=25.2748M/s RateBytes=13.4885Gi/s SpaceReleased=1.58594Gi WasteCentral=25.0571Mi WasteLocal=20.0863Mi WastePageheap=178.672Mi WasteTotal=223.815Mi

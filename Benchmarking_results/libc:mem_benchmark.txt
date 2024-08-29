@@ -1,0 +1,33 @@
+Hardware Prefetcher on
+Run on (16 X 4100 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 2.62, 3.24, 1.57
+-----------------------------------------------------------------------------------
+Benchmark                         Time             CPU   Iterations UserCounters...
+-----------------------------------------------------------------------------------
+BM_LIBC_Memcpy_Fleet_L1       0.034 ns        0.034 ns   1001486548 bytes=1.00149G bytes_per_cycle=7.2225/s bytes_per_second=27.5786Gi/s
+BM_LIBC_Memmove_Fleet_L1      0.087 ns        0.087 ns   1001664235 bytes=1.00166G bytes_per_cycle=2.80361/s bytes_per_second=10.7054Gi/s
+BM_LIBC_Memcmp_Fleet_L1       0.153 ns        0.153 ns   1000632744 bytes=1.00063G bytes_per_cycle=1.59499/s bytes_per_second=6.09036Gi/s
+BM_LIBC_Bcmp_Fleet_L1         0.264 ns        0.264 ns   1000777236 bytes=1.00078G bytes_per_cycle=0.92467/s bytes_per_second=3.53078Gi/s
+BM_LIBC_Memset_Fleet_L1       0.016 ns        0.016 ns   1004310224 bytes=1.00431G bytes_per_cycle=14.8486/s bytes_per_second=56.6981Gi/s
+
+HW Prefetcher off
+Run on (16 X 4102.02 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 0.36, 0.25, 0.11
+-----------------------------------------------------------------------------------
+Benchmark                         Time             CPU   Iterations UserCounters...
+-----------------------------------------------------------------------------------
+BM_LIBC_Memcpy_Fleet_L1       0.032 ns        0.032 ns   1001486548 bytes=1.00149G bytes_per_cycle=7.61186/s bytes_per_second=29.0796Gi/s
+BM_LIBC_Memmove_Fleet_L1      0.085 ns        0.085 ns   1001664235 bytes=1.00166G bytes_per_cycle=2.86511/s bytes_per_second=10.9456Gi/s
+BM_LIBC_Memcmp_Fleet_L1       0.152 ns        0.152 ns   1000632744 bytes=1.00063G bytes_per_cycle=1.60844/s bytes_per_second=6.14473Gi/s
+BM_LIBC_Bcmp_Fleet_L1         0.261 ns        0.261 ns   1000777236 bytes=1.00078G bytes_per_cycle=0.935191/s bytes_per_second=3.57271Gi/s
+BM_LIBC_Memset_Fleet_L1       0.017 ns        0.017 ns   1004310224 bytes=1.00431G bytes_per_cycle=14.7594/s bytes_per_second=56.3854Gi/s

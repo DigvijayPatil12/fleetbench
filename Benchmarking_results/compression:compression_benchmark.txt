@@ -1,0 +1,41 @@
+HW Prefetcher on
+Run on (16 X 4101.74 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 0.24, 0.18, 0.09
+-----------------------------------------------------------------------------------------------------------------------------------
+Benchmark                                                                         Time             CPU   Iterations UserCounters...
+-----------------------------------------------------------------------------------------------------------------------------------
+BM_COMPRESSION_Snappy_COMPRESS_Fleet                                          0.738 ns        0.738 ns    772612096 avg_compression_ratio=1.6 compression_byte_rate=1.26189Gi/s
+BM_COMPRESSION_Snappy_DECOMPRESS_Fleet                                        0.511 ns        0.511 ns   1001845760 avg_compression_ratio=1.63 decompression_byte_rate=1.82196Gi/s
+BM_COMPRESSION_ZSTD_COMPRESS_Fleet/compression_level:-1/window_log:15          1.61 ns         1.61 ns    424919040 avg_compression_ratio=2.55 compression_byte_rate=592.889Mi/s
+BM_COMPRESSION_ZSTD_DECOMPRESS_Fleet/compression_level:0/window_log:0         0.652 ns        0.652 ns   1003074688 avg_compression_ratio=2.65 decompression_byte_rate=1.42848Gi/s
+BM_COMPRESSION_Flate_COMPRESS_Fleet/compression_level:6/window_log:15          11.4 ns         11.4 ns     57480544 avg_compression_ratio=5.26 compression_byte_rate=83.8386Mi/s
+BM_COMPRESSION_Flate_DECOMPRESS_Fleet/compression_level:6/window_log:15        1.02 ns         1.02 ns    699971072 avg_compression_ratio=6.33 decompression_byte_rate=936.519Mi/s
+BM_COMPRESSION_Brotli_COMPRESS_Fleet/compression_level:2/window_log:18         3.73 ns         3.73 ns    183229440 avg_compression_ratio=3.73 compression_byte_rate=255.885Mi/s
+BM_COMPRESSION_Brotli_DECOMPRESS_Fleet/compression_level:2/window_log:18       1.93 ns         1.93 ns    352446592 avg_compression_ratio=2.67 decompression_byte_rate=494.404Mi/s
+
+
+
+HW Prefetcher off
+Run on (16 X 4085.41 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 2.66, 3.39, 1.65
+-----------------------------------------------------------------------------------------------------------------------------------
+Benchmark                                                                         Time             CPU   Iterations UserCounters...
+-----------------------------------------------------------------------------------------------------------------------------------
+BM_COMPRESSION_Snappy_COMPRESS_Fleet                                          0.741 ns        0.741 ns    910951424 avg_compression_ratio=1.6 compression_byte_rate=1.25645Gi/s
+BM_COMPRESSION_Snappy_DECOMPRESS_Fleet                                        0.515 ns        0.515 ns   1001845760 avg_compression_ratio=1.63 decompression_byte_rate=1.80807Gi/s
+BM_COMPRESSION_ZSTD_COMPRESS_Fleet/compression_level:-1/window_log:15          1.61 ns         1.61 ns    421378048 avg_compression_ratio=2.55 compression_byte_rate=592.844Mi/s
+BM_COMPRESSION_ZSTD_DECOMPRESS_Fleet/compression_level:0/window_log:0         0.653 ns        0.653 ns   1003074688 avg_compression_ratio=2.65 decompression_byte_rate=1.42581Gi/s
+BM_COMPRESSION_Flate_COMPRESS_Fleet/compression_level:6/window_log:15          11.4 ns         11.4 ns     62706048 avg_compression_ratio=5.26 compression_byte_rate=83.8325Mi/s
+BM_COMPRESSION_Flate_DECOMPRESS_Fleet/compression_level:6/window_log:15       0.994 ns        0.994 ns    688681216 avg_compression_ratio=6.33 decompression_byte_rate=959.688Mi/s
+BM_COMPRESSION_Brotli_COMPRESS_Fleet/compression_level:2/window_log:18         3.67 ns         3.67 ns    186283264 avg_compression_ratio=3.73 compression_byte_rate=259.852Mi/s
+BM_COMPRESSION_Brotli_DECOMPRESS_Fleet/compression_level:2/window_log:18       1.87 ns         1.87 ns    371279616 avg_compression_ratio=2.67 decompression_byte_rate=508.901Mi/s

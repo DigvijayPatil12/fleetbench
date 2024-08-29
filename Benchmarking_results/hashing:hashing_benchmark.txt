@@ -1,0 +1,36 @@
+HW Prefetcher on
+Run on (16 X 4100 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 0.28, 0.34, 0.28
+-----------------------------------------------------------------------------------------------------
+Benchmark                                           Time             CPU   Iterations UserCounters...
+-----------------------------------------------------------------------------------------------------
+BM_HASHING_Extendcrc32cinternal_Fleet_hot       0.181 ns        0.181 ns   1000268226 bytes_per_cycle=1.34448/s bytes_per_second=5.1338Gi/s
+BM_HASHING_Extendcrc32cinternal_Fleet_cold      0.247 ns        0.247 ns   1000268226 bytes_per_cycle=0.988839/s bytes_per_second=3.77581Gi/s
+BM_HASHING_Computecrc32c_Fleet_hot              0.432 ns        0.432 ns   1000001130 bytes_per_cycle=0.564217/s bytes_per_second=2.15442Gi/s
+BM_HASHING_Computecrc32c_Fleet_cold             0.688 ns        0.688 ns   1000001130 bytes_per_cycle=0.354535/s bytes_per_second=1.35376Gi/s
+BM_HASHING_Combine_contiguous_Fleet_hot         0.103 ns        0.103 ns   1000004100 bytes_per_cycle=2.36938/s bytes_per_second=9.04728Gi/s
+BM_HASHING_Combine_contiguous_Fleet_cold        0.363 ns        0.363 ns   1000004100 bytes_per_cycle=0.671524/s bytes_per_second=2.56416Gi/s
+
+
+HW Prefetcher off
+Run on (16 X 4099.75 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 0.24, 1.60, 1.39
+-----------------------------------------------------------------------------------------------------
+Benchmark                                           Time             CPU   Iterations UserCounters...
+-----------------------------------------------------------------------------------------------------
+BM_HASHING_Extendcrc32cinternal_Fleet_hot       0.180 ns        0.180 ns   1000268226 bytes_per_cycle=1.35268/s bytes_per_second=5.16481Gi/s
+BM_HASHING_Extendcrc32cinternal_Fleet_cold      0.234 ns        0.234 ns   1000268226 bytes_per_cycle=1.04132/s bytes_per_second=3.97596Gi/s
+BM_HASHING_Computecrc32c_Fleet_hot              0.443 ns        0.443 ns   1000001130 bytes_per_cycle=0.550915/s bytes_per_second=2.1035Gi/s
+BM_HASHING_Computecrc32c_Fleet_cold             0.702 ns        0.702 ns    985357835 bytes_per_cycle=0.347431/s bytes_per_second=1.32656Gi/s
+BM_HASHING_Combine_contiguous_Fleet_hot         0.102 ns        0.102 ns   1000004100 bytes_per_cycle=2.39046/s bytes_per_second=9.12724Gi/s
+BM_HASHING_Combine_contiguous_Fleet_cold        0.356 ns        0.356 ns   1000004100 bytes_per_cycle=0.684669/s bytes_per_second=2.6142Gi/s

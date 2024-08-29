@@ -1,0 +1,25 @@
+HW Prefetcher on
+Run on (16 X 4100 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 0.62, 1.16, 1.16
+--------------------------------------------------------
+Benchmark              Time             CPU   Iterations
+--------------------------------------------------------
+BM_CORD_Fleet       6634 ns         6634 ns        98999
+
+HW Prefetcher off
+Run on (16 X 4100.08 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 3.08, 3.00, 1.68
+--------------------------------------------------------
+Benchmark              Time             CPU   Iterations
+--------------------------------------------------------
+BM_CORD_Fleet       6613 ns         6613 ns        97739

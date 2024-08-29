@@ -1,0 +1,10 @@
+Restart in boot menu
+systemctl reboot --firmware-setup
+
+sudo rdmsr -a 0x1a4
+
+sudo wrmsr -a 0x1a4 0/15
+
+sudo cpupower frequency-set -g performance
+
+cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor

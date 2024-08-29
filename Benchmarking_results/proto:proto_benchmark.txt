@@ -1,0 +1,25 @@
+HW Prefetcher on
+Run on (16 X 4100.72 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 9.74, 4.20, 1.71
+---------------------------------------------------------
+Benchmark               Time             CPU   Iterations
+---------------------------------------------------------
+BM_PROTO_Arena    7059895 ns      7060105 ns           90
+
+HW Prefetcher-off
+Run on (16 X 4100 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 1280 KiB (x8)
+  L3 Unified 20480 KiB (x1)
+Load Average: 9.01, 4.58, 2.51
+---------------------------------------------------------
+Benchmark               Time             CPU   Iterations
+---------------------------------------------------------
+BM_PROTO_Arena    7344990 ns      7345206 ns           91
